@@ -202,6 +202,23 @@
 #define OS_CLOCK                120000000
 #endif
 
+#elif defined(TARGET_KV58F)
+
+#ifndef INITIAL_SP
+#define INITIAL_SP              (0x20020000UL)
+#endif
+
+#ifndef OS_TASKCNT
+#define OS_TASKCNT              14
+#endif
+#ifndef OS_MAINSTKSIZE
+#define OS_MAINSTKSIZE          256
+#endif
+#ifndef OS_CLOCK
+#define OS_CLOCK                150000000
+#endif
+
+
 #elif defined(TARGET_KW24D)
 
 #ifndef INITIAL_SP
